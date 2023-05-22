@@ -1,0 +1,61 @@
+.dapp {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .content {
+        display: flex;
+        gap: 16px;
+        justify-content: space-between;
+
+        .vote-column {
+            display: flex;
+            flex-direction: column;
+
+            gap: 16px;
+
+            .label {
+                font-weight: 500;
+                font-size: 32px;
+            }
+
+            .proposals {
+                gap: 8px;
+
+                .proposal {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 24px;
+
+                    vertical-align: middle;
+
+                    gap: 24px;
+                }
+            }
+
+            > * {
+                font-size: 24px;
+            }
+        }
+    
+        .admin-column {
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+
+            gap: 8px;
+
+            .label {
+                font-weight: 500;
+                font-size: 32px;
+            }
+
+            > * {
+                font-size: 24px;
+            }
+        }
+    }
+}
